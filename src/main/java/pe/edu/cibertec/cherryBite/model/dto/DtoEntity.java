@@ -1,4 +1,4 @@
 package pe.edu.cibertec.cherryBite.model.dto;
 
-public class RolDto {
+public interface DtoEntity {
 }

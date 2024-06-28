@@ -1,4 +1,9 @@
 package pe.edu.cibertec.cherryBite.model.dto;
 
-public class GrupoAlimentoDto {
+import lombok.Data;
+
+@Data
+public class GrupoAlimentoDto implements DtoEntity {
+    private int idgrupoalimento;
+    private String descripcion;
 }
