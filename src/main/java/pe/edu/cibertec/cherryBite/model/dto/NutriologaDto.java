@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class NutriologaDto implements DtoEntity {
-    private int idnutriologa;
+    private Integer idnutriologa;
     private String nombres;
     private String apellidos;
     private String email;

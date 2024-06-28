@@ -11,6 +11,6 @@ import lombok.Setter;
 public class GrupoAlimento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idgrupoalimento;
+    private Integer idgrupoalimento;
     private String descripcion;
 }

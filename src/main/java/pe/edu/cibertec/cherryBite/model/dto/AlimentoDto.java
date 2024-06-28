@@ -4,11 +4,11 @@ import lombok.Data;
 
 @Data
 public class AlimentoDto implements DtoEntity {
-    private int idalimento;
+    private Integer idalimento;
     private String nombre;
-    private int porcion;
-    private int idgrupoalimento;
+    private Integer porcion;
+    private Integer idgrupoalimento;
     private String descripcion;
     private String imagen;
-    private int idvalornutricional;
+    private Integer idvalornutricional;
 }

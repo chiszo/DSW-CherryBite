@@ -2,14 +2,16 @@ package pe.edu.cibertec.cherryBite.model.dto;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class HabitoDto implements DtoEntity {
-    private int idhabito;
+    private Integer idhabito;
     private String descripcion;
-    private int idcategoria;
+    private Integer idcategoria;
     private String frecuencia;
-    private java.sql.Time horadia;
-    private java.sql.Date fechainicio;
-    private java.sql.Date fechafin;
-    private int progreso;
+    private Date horadia;
+    private Date fechainicio;
+    private Date fechafin;
+    private Integer progreso;
 }

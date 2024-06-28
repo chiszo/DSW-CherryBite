@@ -11,7 +11,7 @@ import lombok.Setter;
 public class Nutriologa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idnutriologa;
+    private Integer idnutriologa;
     private String nombres;
     private String apellidos;
     private String email;

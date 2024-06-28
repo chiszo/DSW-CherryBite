@@ -11,6 +11,6 @@ import lombok.Setter;
 public class Sexo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idsexo;
+    private Integer idsexo;
     private String descripcion;
 }

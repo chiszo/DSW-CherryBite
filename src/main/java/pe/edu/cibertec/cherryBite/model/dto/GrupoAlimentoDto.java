@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class GrupoAlimentoDto implements DtoEntity {
-    private int idgrupoalimento;
+    private Integer idgrupoalimento;
     private String descripcion;
 }

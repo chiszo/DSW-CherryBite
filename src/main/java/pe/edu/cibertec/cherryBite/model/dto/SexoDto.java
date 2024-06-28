@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class SexoDto implements DtoEntity {
-    private int idsexo;
+    private Integer idsexo;
     private String descripcion;
 }
