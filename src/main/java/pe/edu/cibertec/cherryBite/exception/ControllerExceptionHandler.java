@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
-import pe.edu.cibertec.api_rest_ventas.model.dto.MensajeErrorDto;
+import pe.edu.cibertec.cherryBite.model.dto.MensajeErrorDto;
 
 import java.util.Date;
 

@@ -29,12 +29,12 @@ public class Persona {
     private Sexo sexo;
     private Boolean estado;
 
-    @OneToMany(mappedBy = "habito",
+    @OneToMany(mappedBy = "persona",
             cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private Set<Detalle_Habito> habitos = new HashSet<>();
 
-    @OneToMany(mappedBy = "alimento",
+    @OneToMany(mappedBy = "persona",
             cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private Set<Detalle_Alimento> alimentos = new HashSet<>();

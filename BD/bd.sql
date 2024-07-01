@@ -113,16 +113,26 @@ create table detalle_habito
 	idpersona            int not null,
 	idhabito             int not null,
 	realizado            boolean,
+    fecha				timestamp default CURRENT_TIMESTAMP,
 	foreign key (idpersona) references persona(idpersona),
 	foreign key (idhabito) references habito(idhabito),
     primary key(idpersona,idhabito)
 );
 
 create table usuario_rol
-( 
+(
 	idusuario            int not null,
 	idrol                int not null,
 	primary key (idusuario, idrol),
 	foreign key (idusuario) references usuario(idusuario),
 	foreign key (idrol) references rol(idrol)
+);
+
+create table noticia
+(
+	idnoticia             int not null primary key auto_increment,
+	titulo          varchar(45),
+	descripcion      varchar(300),
+	imagen           blob,
+	fecha              date
 );
