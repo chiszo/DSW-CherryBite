@@ -11,14 +11,5 @@ import pe.edu.cibertec.cherryBite.model.bd.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
     Usuario findByNomusuario(String nomusuario);
-
-    @Transactional
-    @Modifying
-    @Query(value = "UPDATE usuario SET nombres=:nombres, apellidos=:apellidos, " +
-            "activo=:activo where idusuario=:idusuario",
-            nativeQuery = true)
-    void actualizarUsuario(@Param("nombres") String nombres,
-                           @Param("apellidos") String apellidos,
-                           @Param("activo") Boolean activo,
-                           @Param("idusuario") Integer idusuario);
+    Usuario findByNombres(String nombres);
 }
