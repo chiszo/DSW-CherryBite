@@ -34,7 +34,6 @@ create table usuario
 	apellidos            varchar(100),
 	activo               tinyint(1)
 );
-
 create table rol
 ( 
 	idrol                int not null primary key auto_increment,
@@ -120,7 +119,7 @@ create table detalle_habito
 );
 
 create table usuario_rol
-(
+( 
 	idusuario            int not null,
 	idrol                int not null,
 	primary key (idusuario, idrol),
@@ -129,10 +128,10 @@ create table usuario_rol
 );
 
 create table noticia
-(
+( 
 	idnoticia             int not null primary key auto_increment,
 	titulo          varchar(45),
 	descripcion      varchar(300),
-	imagen           blob,
+	imagen           varchar(500),
 	fecha              date
 );

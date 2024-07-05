@@ -18,6 +18,6 @@ public class Noticia {
     private Integer idnoticia;
     private String titulo;
     private String descripcion;
-    private Blob imagen;
+    private String imagen;
     private Date fecha;
 }

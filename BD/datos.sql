@@ -7,11 +7,11 @@ INSERT INTO nutriologa (nombres, apellidos, email, telf) VALUES
     ('María', 'López', 'maria.lopez@example.com', '123456789'),
     ('Alejandro', 'García', 'alejandro.garcia@example.com', '987654321'),
     ('Ana', 'Martínez', 'ana.martinez@example.com', '555123456');
-
+-- 12345678
 INSERT INTO usuario (nomusuario, email, password, nombres, apellidos, activo) VALUES
-    ('usuario1', 'usuario1@example.com', 'password1', 'Juan', 'Pérez', 1),
-    ('usuario2', 'usuario2@example.com', 'password2', 'María', 'González', 1),
-    ('usuario3', 'usuario3@example.com', 'password3', 'Pedro', 'Sánchez', 1);
+    ('chiszo', 'usuario1@example.com', '$2a$12$VTfCXTWnGcBV6G5.nYowgODiHF8m2bzj8jDbzisLDnwfakwd4nBVS', 'Juan', 'Pérez', 1),
+    ('tijera', 'usuario2@example.com', '$2a$12$VTfCXTWnGcBV6G5.nYowgODiHF8m2bzj8jDbzisLDnwfakwd4nBVS', 'María', 'González', 1),
+    ('holamundo', 'usuario3@example.com', '$2a$12$VTfCXTWnGcBV6G5.nYowgODiHF8m2bzj8jDbzisLDnwfakwd4nBVS', 'Pedro', 'Sánchez', 1);
     
     INSERT INTO sexo (descripcion) VALUES
     ('HOMBRE'),
@@ -69,21 +69,21 @@ INSERT INTO valornutricional (calorias, proteinas, grasas, carbohidratos, colest
     (100, 5, 3, 15, 0.3, 6, 90);
     
     INSERT INTO alimento (nombre, porcion, idgrupoalimento, descripcion, imagen, idvalornutricional) VALUES
-    ('Manzana', 1, 1, 'Fruta fresca', 'manzana.jpg', 1),
-    ('Arroz', 50, 2, 'Arroz blanco cocido', 'arroz.jpg', 2),
-    ('Pechuga de pollo', 100, 3, 'Pechuga de pollo a la plancha', 'pollo.jpg', 3),
-    ('Leche', 200, 4, 'Leche semidesnatada', 'leche.jpg', 4),
-    ('Huevo', 1, 5, 'Huevo cocido', 'huevo.jpg', 5),
-    ('Espinacas', 50, 6, 'Espinacas frescas', 'espinacas.jpg', 6),
-    ('Pasta', 80, 7, 'Pasta cocida al dente', 'pasta.jpg', 7),
-    ('Yogur', 150, 8, 'Yogur natural bajo en grasa', 'yogur.jpg', 8),
-    ('Salmón', 120, 9, 'Filete de salmón a la plancha', 'salmon.jpg', 9),
-    ('Plátano', 1, 10, 'Plátano maduro', 'platano.jpg', 10),
-    ('Ternera', 100, 11, 'Filete de ternera a la plancha', 'ternera.jpg', 11),
-    ('Quinoa', 50, 12, 'Quinoa cocida', 'quinoa.jpg', 12),
-    ('Nueces', 30, 13, 'Nueces crudas', 'nueces.jpg', 13),
-    ('Zanahoria', 80, 14, 'Zanahoria cruda', 'zanahoria.jpg', 14),
-    ('Pan integral', 50, 15, 'Pan integral tostado', 'pan_integral.jpg', 15);
+    ('Manzana', 1, 1, 'Fruta fresca', 'https://www.prensalibre.com/wp-content/uploads/2023/12/Beneficios-de-comer-una-manzana-diaria.jpg?quality=52', 1),
+    ('Arroz', 50, 2, 'Arroz blanco cocido', 'https://cdn.recetasderechupete.com/wp-content/uploads/2023/02/Arroz-sin-almidon.jpg', 2),
+    ('Pechuga de pollo', 100, 3, 'Pechuga de pollo a la plancha', 'https://www.recetasderechupete.com/wp-content/uploads/2022/07/Pollo-cocido.jpg', 3),
+    ('Leche', 200, 4, 'Leche semidesnatada', 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Milk_glass.jpg', 4),
+    ('Huevo', 1, 5, 'Huevo cocido', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvC8DmPVsCsXoCMm7Cfh8QOamTsQG6YzSCg&s', 5),
+    ('Espinacas', 50, 6, 'Espinacas frescas', 'https://www.conasi.eu/blog/wp-content/uploads/2023/07/recetas-con-espinacas-d.jpg', 6),
+    ('Pasta', 80, 7, 'Pasta cocida al dente', 'https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2021/09/13/fideos.jpeg', 7),
+    ('Yogur', 150, 8, 'Yogur natural bajo en grasa', 'https://www.recetasnestlecam.com/sites/default/files/2023-02/cuenco-con-yogurt-griego.jpg%20banner%20desktop.jpg', 8),
+    ('Salmón', 120, 9, 'Filete de salmón a la plancha', 'https://www.cucinare.tv/wp-content/uploads/2020/06/Salm%C3%B3n-rosado.jpg', 9),
+    ('Plátano', 1, 10, 'Plátano maduro', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzVJUw8ro13TNu2-dzpIMvYz1i9jnP8YApQ&s', 10),
+    ('Ternera', 100, 11, 'Filete de ternera a la plancha', 'https://c8.alamy.com/compes/2x1ea7f/deliciosa-carne-de-ternera-frita-sobre-mesa-sobre-fondo-negro-2x1ea7f.jpg', 11),
+    ('Quinoa', 50, 12, 'Quinoa cocida', 'https://www.recetasderechupete.com/wp-content/uploads/2020/09/quinoa-cocida-1200x828.jpg', 12),
+    ('Nueces', 30, 13, 'Nueces crudas', 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Walnuts_-_whole_and_open_with_halved_kernel.jpg/640px-Walnuts_-_whole_and_open_with_halved_kernel.jpg', 13),
+    ('Zanahoria', 80, 14, 'Zanahoria cruda', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLP1972kvnKtH-6XiwpYJ3R-lycuaBaKrKRA&s', 14),
+    ('Pan integral', 50, 15, 'Pan integral tostado', 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/f1ec1b78-4db1-45ac-9189-40619b7fad74/Derivates/2c238c6b-e380-486e-b9dc-39e41695a5ba.jpg', 15);
 
 INSERT INTO habito (idhabito,descripcion, idcategoria, frecuencia, horadia, fechainicio, fechafin, progreso) VALUES
     (1,'Hábito 1', 1, 'Diario', '08:00:00', '2023-01-01', null, 50),
@@ -136,23 +136,23 @@ INSERT INTO detalle_habito (idpersona, idhabito, realizado) VALUES
     (2, 14, 0),
     (3, 15, 1);
 INSERT INTO noticia (titulo, descripcion, imagen, fecha) VALUES
-('Beneficios de la Manzana', 'Descubre cómo una manzana al día puede mejorar tu salud.', NULL, '2024-06-01'),
-('Superalimentos para el Corazón', 'Alimentos que ayudan a mantener un corazón saludable.', NULL, '2024-06-02'),
-('Dieta Mediterránea', 'Conoce los beneficios de seguir una dieta mediterránea.', NULL, '2024-06-03'),
-('Importancia del Desayuno', '¿Por qué no debes saltarte el desayuno?', NULL, '2024-06-04'),
-('Alimentos Ricos en Fibra', 'Mejora tu digestión con estos alimentos ricos en fibra.', NULL, '2024-06-05'),
-('Reducir el Consumo de Azúcar', 'Consejos para reducir la ingesta de azúcar en tu dieta.', NULL, '2024-06-06'),
-('Beneficios del Té Verde', 'El té verde y sus propiedades antioxidantes.', NULL, '2024-06-07'),
-('Pescado: Fuente de Omega-3', 'La importancia de incluir pescado en tu dieta.', NULL, '2024-06-08'),
-('Frutas Cítricas y la Vitamina C', 'Cómo las frutas cítricas fortalecen tu sistema inmunológico.', NULL, '2024-06-09'),
-('Hidratación Adecuada', 'La importancia de mantener una buena hidratación.', NULL, '2024-06-10'),
-('Vegetales de Hoja Verde', 'Beneficios de los vegetales de hoja verde en tu dieta.', NULL, '2024-06-11'),
-('Comida Rápida Saludable', 'Opciones de comida rápida que no perjudican tu salud.', NULL, '2024-06-12'),
-('Nueces y Semillas', 'Incluye nueces y semillas en tu dieta diaria.', NULL, '2024-06-13'),
-('Alimentos para la Salud Cerebral', 'Mejora tu memoria con estos alimentos.', NULL, '2024-06-14'),
-('Proteínas Vegetales', 'Alternativas vegetales para obtener proteínas.', NULL, '2024-06-15'),
-('Planificación de Comidas', 'Cómo planificar tus comidas de manera saludable.', NULL, '2024-06-16'),
-('Reducir el Consumo de Sal', 'Consejos para disminuir la sal en tus comidas.', NULL, '2024-06-17'),
-('Beneficios del Agua de Coco', 'Propiedades hidratantes y nutritivas del agua de coco.', NULL, '2024-06-18'),
-('Alimentos Probióticos', 'Mejora tu salud intestinal con probióticos.', NULL, '2024-06-19'),
-('Hábitos Alimenticios Saludables', 'Consejos para mantener hábitos alimenticios saludables a largo plazo.', NULL, '2024-06-20');
+('Beneficios de la Manzana', 'Descubre cómo una manzana al día puede mejorar tu salud.', 'https://www.prensalibre.com/wp-content/uploads/2023/12/Beneficios-de-comer-una-manzana-diaria.jpg?quality=52', '2024-06-01'),
+('Superalimentos para el Corazón', 'Alimentos que ayudan a mantener un corazón saludable.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzSNQ0ax-kxlZ67FTmwJH6tD_WH2Aj_f5WQ&s', '2024-06-02'),
+('Dieta Mediterránea', 'Conoce los beneficios de seguir una dieta mediterránea.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTfirl8DCQr5lnOgYK3p7uBuF7r15y1Ok8Q&s', '2024-06-03'),
+('Importancia del Desayuno', '¿Por qué no debes saltarte el desayuno?', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4-tRDfGjZQBaMaALcEm30KuKvJFid4KX7YA&s', '2024-06-04'),
+('Alimentos Ricos en Fibra', 'Mejora tu digestión con estos alimentos ricos en fibra.', 'https://i.blogs.es/7dcb4a/fruta-fibra/1366_2000.jpg', '2024-06-05'),
+('Reducir el Consumo de Azúcar', 'Consejos para reducir la ingesta de azúcar en tu dieta.', 'https://elcomercio.pe/resizer/873uMQW9ndmWoLXCRvdXTahqMSc=/1200x900/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/A35OONAGORGL3O3S76JMSYH5IQ.jpg', '2024-06-06'),
+('Beneficios del Té Verde', 'El té verde y sus propiedades antioxidantes.', 'https://static.tuasaude.com/media/article/yp/dt/beneficios-del-te-verde_17350_l.jpg', '2024-06-07'),
+('Pescado: Fuente de Omega-3', 'La importancia de incluir pescado en tu dieta.', 'https://esenciadelmar.es/wp-content/uploads/2023/08/formas-cocinar-pescado-1200x700.jpg', '2024-06-08'),
+('Frutas Cítricas y la Vitamina C', 'Cómo las frutas cítricas fortalecen tu sistema inmunológico.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWi9O5Ho88H0lJngzIPCFUapMDSmzsudXHBg&s', '2024-06-09'),
+('Hidratación Adecuada', 'La importancia de mantener una buena hidratación.', 'https://www.pescanova.pe/wp-content/uploads/2021/08/como-hidratarse-en-el-verano-1.jpg', '2024-06-10'),
+('Vegetales de Hoja Verde', 'Beneficios de los vegetales de hoja verde en tu dieta.', 'https://www.lavanguardia.com/files/og_thumbnail/uploads/2016/07/15/5fa2cf97121ce.jpeg', '2024-06-11'),
+('Comida Rápida Saludable', 'Opciones de comida rápida que no perjudican tu salud.', 'https://www.clarin.com/2022/08/17/QoyfI4ouM_2000x1500__1.jpg', '2024-06-12'),
+('Nueces y Semillas', 'Incluye nueces y semillas en tu dieta diaria.', 'https://www.revistamoi.com/wp-content/uploads/2019/08/nueces.jpg', '2024-06-13'),
+('Alimentos para la Salud Cerebral', 'Mejora tu memoria con estos alimentos.', 'https://www.mgc.es/wp-content/uploads/2020/12/alimentos-para-la-memoria-THUMBNAIL2-1-1-1200x900.jpg', '2024-06-14'),
+('Proteínas Vegetales', 'Alternativas vegetales para obtener proteínas.', 'https://www.kibofoods.com.co/wp-content/uploads/2021/02/ejemplos-de-proteinas-vegetales-para-incluir-en-tu-alimentacion-diaria-.jpg', '2024-06-15'),
+('Planificación de Comidas', 'Cómo planificar tus comidas de manera saludable.', 'https://gnd-content.dev/blog/wp-content/uploads/2023/02/MENU-SEMANAL-4.jpg', '2024-06-16'),
+('Reducir el Consumo de Sal', 'Consejos para disminuir la sal en tus comidas.', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ34phA9JHOthCyU1Hx6HAMS4p1sRfxmCeDgg&s', '2024-06-17'),
+('Beneficios del Agua de Coco', 'Propiedades hidratantes y nutritivas del agua de coco.', 'https://www.clarin.com/2023/05/23/O1ysSpFFh_1200x0__1.jpg', '2024-06-18'),
+('Alimentos Probióticos', 'Mejora tu salud intestinal con probióticos.', 'https://statics-cuidateplus.marca.com/cms/images/alimentos-fibra.jpg', '2024-06-19'),
+('Hábitos Alimenticios Saludables', 'Consejos para mantener hábitos alimenticios saludables a largo plazo.', 'https://cdn.aarp.net/content/dam/aarp/health/healthy-living/2021/05/1140-health-calendar-reset-esp.jpg', '2024-06-20');
