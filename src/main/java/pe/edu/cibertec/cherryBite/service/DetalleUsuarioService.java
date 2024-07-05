@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 import pe.edu.cibertec.cherryBite.model.bd.Rol;
 import pe.edu.cibertec.cherryBite.model.bd.Usuario;
 import pe.edu.cibertec.cherryBite.repository.UsuarioRepository;
@@ -13,7 +14,7 @@ import pe.edu.cibertec.cherryBite.repository.UsuarioRepository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
+@Service
 public class DetalleUsuarioService implements UserDetailsService {
     private UsuarioRepository usuarioRepository;
 

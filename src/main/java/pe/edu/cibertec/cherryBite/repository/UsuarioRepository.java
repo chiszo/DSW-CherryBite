@@ -22,6 +22,4 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
                         @Param("apellidos") String apellidos);
     Usuario findByNomusuario(String nomusuario);
     Usuario findByNombres(String nombres);
-
-
 }
