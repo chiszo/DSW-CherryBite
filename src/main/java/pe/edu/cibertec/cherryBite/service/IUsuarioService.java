@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IUsuarioService {
     Usuario obtenerUsuarioPorNomUsuario(String nomususario);
+    Usuario guardarUsuario(Usuario usuario);
 }

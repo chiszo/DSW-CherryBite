@@ -18,4 +18,13 @@ public class UsuarioService implements IUsuarioService{
     public Usuario obtenerUsuarioPorNomUsuario(String nomususario) {
         return usuarioRepository.findByNomusuario(nomususario);
     }
+
+    @Override
+    public Usuario guardarUsuario(Usuario usuario) {
+        return usuarioRepository.guardarUsuario(usuario.getNomusuario(),
+                usuario.getEmail(),
+                usuario.getPassword(),
+                usuario.getNombres(),
+                usuario.getApellidos());
+    }
 }

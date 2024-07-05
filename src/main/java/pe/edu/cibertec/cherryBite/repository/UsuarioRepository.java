@@ -10,6 +10,18 @@ import pe.edu.cibertec.cherryBite.model.bd.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
+
+    @Transactional
+    @Modifying
+    @Query(value = "{call sp_guardarpersonUsuario(:nomususario, :email,:password, :nombres, :apellidos)}",
+    nativeQuery = true)
+    Usuario guardarUsuario(@Param("nomususario") String nomususario,
+                        @Param("email") String email,
+                        @Param("password") String password,
+                        @Param("nombres") String nombres,
+                        @Param("apellidos") String apellidos);
     Usuario findByNomusuario(String nomusuario);
     Usuario findByNombres(String nombres);
+
+
 }

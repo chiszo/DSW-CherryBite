@@ -19,6 +19,8 @@ public class Persona {
     @ManyToOne
     @JoinColumn(name = "idnutriologa")
     private Nutriologa nutriologa;
+    @ManyToOne
+    @JoinColumn(name = "idusuario")
     private Integer idusuario;
     private Double peso;
     private Double altura;
